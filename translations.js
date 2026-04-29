@@ -1,7 +1,7 @@
 const translations = {
   en: {
     'nav.about': 'About', 'nav.projects': 'Projects', 'nav.resume': 'Resume', 'nav.contact': 'Contact',
-    'hero.eyebrow': 'BI & Analytics Engineer',
+    'hero.eyebrow': 'Analytics Engineer',
     'hero.description': 'Building the data layer behind the decisions — pipelines, models, and dashboards that turn raw data into something teams can actually trust and use.',
     'hero.cta': 'View Projects',
     'about.title': 'About',
@@ -36,7 +36,7 @@ const translations = {
   },
   pt: {
     'nav.about': 'Sobre', 'nav.projects': 'Projetos', 'nav.resume': 'Currículo', 'nav.contact': 'Contato',
-    'hero.eyebrow': 'BI & Analytics Engineer',
+    'hero.eyebrow': 'Analytics Engineer',
     'hero.description': 'Construindo a camada de dados por trás das decisões — pipelines, modelos e dashboards que transformam dados brutos em algo em que os times possam confiar e usar de verdade.',
     'hero.cta': 'Ver Projetos',
     'about.title': 'Sobre',
