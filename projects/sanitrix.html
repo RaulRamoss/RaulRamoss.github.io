@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR | Raul Ramos</title>
+    <title>Sanitrix | Raul Ramos</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .site-preview-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 60%;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+            margin-top: 1.5rem;
+            background: #111;
+        }
+        .site-preview-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+        .site-preview-fallback {
+            display: none;
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            background: var(--bg-card);
+        }
+        .visit-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent);
+            color: #0d1117;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.2s, transform 0.2s;
+            margin-top: 1.5rem;
+        }
+        .visit-btn:hover { opacity: 0.85; transform: translateY(-2px); }
+        .visit-btn svg { width: 16px; height: 16px; fill: currentColor; }
+    </style>
 </head>
 <body>
 
@@ -32,49 +78,49 @@
     <div class="container">
         <a href="../index.html#projects" class="back-link" data-i18n="nav.backlink">← Back to Projects</a>
         <div class="project-tags">
-            <span class="card-tag">Human Resources</span>
-            <span class="card-tag">Power BI</span>
+            <span class="card-tag">Website</span>
+            <span class="card-tag">Nutrition</span>
         </div>
-        <h1 class="project-title">HR</h1>
+        <h1 class="project-title">Sanitrix</h1>
         <p class="project-description">
-            Human resources dashboard providing a comprehensive view of the workforce.
-            The main objective is HR control — delivering insights into headcount, turnover,
-            hiring trends, and overtime. Tooltip interactions on bar charts surface overtime
-            hours by position without cluttering the main view.
+            Institutional website built for a nutrition consultancy. Designed to convey
+            professionalism and trust, with a clean layout that presents services,
+            credentials, and contact options clearly. Built with a focus on mobile-first
+            responsiveness and deployed on Netlify.
         </p>
+        <a href="https://sanitrix.netlify.app" target="_blank" rel="noopener" class="visit-btn">
+            <svg viewBox="0 0 24 24"><path d="M14 3v2H5v14h14v-9h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10zm7-1v6h-2V5.413L10.414 14 9 12.586 17.585 4H15V2h6z"/></svg>
+            Visit Live Site
+        </a>
     </div>
 </div>
 
 <div class="features-section section-alt">
     <div class="container">
-        <h2 class="section-title">Key Features & Metrics</h2>
+        <h2 class="section-title">What's Inside</h2>
         <div class="features-grid">
-            <div class="feature-item"><span class="feature-dot"></span>Active employees count</div>
-            <div class="feature-item"><span class="feature-dot"></span>Dismissed employees count</div>
-            <div class="feature-item"><span class="feature-dot"></span>Total hires</div>
-            <div class="feature-item"><span class="feature-dot"></span>Turnover rate</div>
-            <div class="feature-item"><span class="feature-dot"></span>Gender distribution</div>
-            <div class="feature-item"><span class="feature-dot"></span>Employees by city</div>
-            <div class="feature-item"><span class="feature-dot"></span>Overtime hours by position (tooltip)</div>
-            <div class="feature-item"><span class="feature-dot"></span>Geographic filters</div>
+            <div class="feature-item"><span class="feature-dot"></span>Services overview</div>
+            <div class="feature-item"><span class="feature-dot"></span>Professional profile section</div>
+            <div class="feature-item"><span class="feature-dot"></span>Contact form</div>
+            <div class="feature-item"><span class="feature-dot"></span>Mobile-first responsive layout</div>
+            <div class="feature-item"><span class="feature-dot"></span>Clean, modern visual design</div>
+            <div class="feature-item"><span class="feature-dot"></span>Deployed on Netlify</div>
         </div>
     </div>
 </div>
 
-<div class="dashboard-section">
+<div class="features-section">
     <div class="container">
-        <h2 class="section-title">Dashboard</h2>
-        <div class="dashboard-wrapper">
-            <!-- EMBED: Replace the src below with your Power BI embed URL -->
+        <h2 class="section-title">Live Preview</h2>
+        <div class="site-preview-wrapper">
             <iframe
-                src="https://app.powerbi.com/reportEmbed?reportId=3a7eff7f-39da-468f-b20e-424789d640fa&autoAuth=true&ctid=41348d38-9785-433e-b1ce-e1c14b77a71a"
-                title="HR Dashboard"
-                allowFullScreen="true">
+                src="https://sanitrix.netlify.app"
+                title="Sanitrix — Nutrition Consultancy Website"
+                loading="lazy">
             </iframe>
         </div>
     </div>
 </div>
-
 
 <footer class="site-footer">
     <div class="container">

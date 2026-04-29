@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    'nav.about': 'About', 'nav.projects': 'Projects', 'nav.resume': 'Resume', 'nav.contact': 'Contact',
+    'nav.about': 'About', 'nav.projects': 'Projects', 'nav.resume': 'Resume', 'nav.contact': 'Contact', 'nav.backlink': '← Back to Projects',
     'hero.eyebrow': 'Analytics Engineer',
     'hero.description': 'Building the data layer behind the decisions — pipelines, models, and dashboards that turn raw data into something teams can actually trust and use.',
     'hero.cta': 'View Projects',
@@ -10,6 +10,7 @@ const translations = {
     'projects.title': 'Projects',
     'card.viewmore': 'View Project →',
     'card.astra.tag': 'AI Agent · MBA Thesis', 'card.astra.title': 'Astra — AI Data Analyst', 'card.astra.desc': 'AI-powered data analyst that converts plain Portuguese questions into SQL, executes them on a Brazilian e-commerce database, and returns a natural-language insight, an auto-generated chart, the SQL, and the raw data — built with Claude Haiku and DuckDB as my MBA thesis at FIAP.',
+    'card.sanitrix.tag': 'Website · Nutrition', 'card.sanitrix.title': 'Sanitrix', 'card.sanitrix.desc': 'Institutional website built for a nutrition consultancy. Features a clean, modern design with service descriptions, professional profile, and contact form — fully responsive and deployed on Netlify.',
     'card.sbi.tag': 'BI Assessment', 'card.sbi.desc': 'Dashboard developed as part of a technical assessment for a Senior BI Analyst position, featuring advanced field parameters, custom tooltips and interactive filters.',
     'card.hashtag.tag': 'Retail · Sales', 'card.hashtag.desc': 'Sales and invoicing dashboard to analyze revenue and compare results against targets, with custom hover tooltips and a scrolling store-performance chart.',
     'card.rauls.tag': 'Retail · Returns', 'card.rauls.desc': 'Sales and returns dashboard tracking revenue, profit, top customers, and return rates across store locations for a fictional retail chain.',
@@ -36,7 +37,7 @@ const translations = {
     'footer.copy': '© 2025 Raul Ramos. All projects use fictional data for educational purposes.',
   },
   pt: {
-    'nav.about': 'Sobre', 'nav.projects': 'Projetos', 'nav.resume': 'Currículo', 'nav.contact': 'Contato',
+    'nav.about': 'Sobre', 'nav.projects': 'Projetos', 'nav.resume': 'Currículo', 'nav.contact': 'Contato', 'nav.backlink': '← Voltar para Projetos',
     'hero.eyebrow': 'Analytics Engineer',
     'hero.description': 'Construindo a camada de dados por trás das decisões — pipelines, modelos e dashboards que transformam dados brutos em algo em que os times possam confiar e usar de verdade.',
     'hero.cta': 'Ver Projetos',
@@ -46,6 +47,7 @@ const translations = {
     'projects.title': 'Projetos',
     'card.viewmore': 'Ver Projeto →',
     'card.astra.tag': 'Agente IA · TCC FIAP', 'card.astra.title': 'Astra — Analista de Dados IA', 'card.astra.desc': 'Analista de dados com IA que converte perguntas em português para SQL, executa no banco de e-commerce brasileiro e retorna um insight em linguagem natural, gráfico gerado automaticamente, o SQL e os dados brutos — construído com Claude Haiku e DuckDB como meu TCC no MBA da FIAP.',
+    'card.sanitrix.tag': 'Site · Nutrição', 'card.sanitrix.title': 'Sanitrix', 'card.sanitrix.desc': 'Site institucional construído para uma consultoria de nutrição. Design moderno e limpo com descrição dos serviços, perfil profissional e formulário de contato — totalmente responsivo e publicado no Netlify.',
     'card.sbi.tag': 'Avaliação Técnica', 'card.sbi.desc': 'Dashboard desenvolvido como parte de uma avaliação técnica para uma posição de Senior BI Analyst, com parâmetros de campo avançados, tooltips customizados e filtros interativos.',
     'card.hashtag.tag': 'Varejo · Vendas', 'card.hashtag.desc': 'Dashboard de vendas e faturamento para análise de receita e comparação com metas, com tooltips customizados e gráfico scrollável de desempenho por loja.',
     'card.rauls.tag': 'Varejo · Devoluções', 'card.rauls.desc': 'Dashboard de vendas e devoluções rastreando receita, lucro, principais clientes e taxa de retorno por loja para uma rede de varejo fictícia.',

@@ -81,16 +81,21 @@
     <div class="nav-container">
         <a href="../index.html" class="nav-logo">Raul Ramos</a>
         <ul class="nav-links">
-            <li><a href="../index.html#about">About</a></li>
-            <li><a href="../index.html#projects">Projects</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+            <li><a href="../index.html#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
+        <div class="lang-switcher">
+            <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-opt" data-lang="pt" onclick="setLang('pt')">PT</button>
+        </div>
     </div>
 </nav>
 
 <div class="project-hero">
     <div class="container">
-        <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+        <a href="../index.html#projects" class="back-link" data-i18n="nav.backlink">← Back to Projects</a>
         <div class="project-tags">
             <span class="card-tag">AI Agent</span>
             <span class="card-tag">Python</span>
@@ -106,6 +111,16 @@
         <div class="thesis-badge">
             MBA in Data Science & AI · FIAP · 2025
         </div>
+    </div>
+</div>
+
+<div class="features-section">
+    <div class="container">
+        <img
+            src="astra-preview.png"
+            alt="Astra AI Data Analyst — interface screenshot"
+            style="width:100%;max-width:900px;display:block;margin:0 auto;border-radius:12px;border:1px solid var(--border);box-shadow:0 8px 40px rgba(0,0,0,0.4);"
+        >
     </div>
 </div>
 
@@ -182,9 +197,10 @@
                 linkedin.com/in/raultramos
             </a>
         </div>
-        <p class="footer-copy">© 2025 Raul Ramos. All projects use fictional data for educational purposes.</p>
+        <p class="footer-copy" data-i18n="footer.copy">© 2025 Raul Ramos. All projects use fictional data for educational purposes.</p>
     </div>
 </footer>
 
+<script src="../translations.js"></script>
 </body>
 </html>
