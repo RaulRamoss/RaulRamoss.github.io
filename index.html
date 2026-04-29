@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raul Ramos | Data Analyst Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,96 +16,105 @@
     <div class="nav-container">
         <a href="index.html" class="nav-logo">Raul Ramos</a>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#resume" data-i18n="nav.resume">Resume</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
+        <div class="lang-switcher">
+            <button class="lang-opt active" data-lang="en" onclick="setLang('en')">EN</button>
+            <span class="lang-sep">|</span>
+            <button class="lang-opt" data-lang="pt" onclick="setLang('pt')">PT</button>
+        </div>
     </div>
 </nav>
 
 <section class="hero">
     <div class="hero-content">
-        <p class="hero-eyebrow">BI & Analytics Engineer</p>
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">BI & Analytics Engineer</p>
         <h1 class="hero-title">Raul Ramos</h1>
-        <p class="hero-description">
+        <p class="hero-description" data-i18n="hero.description">
             Building the data layer behind the decisions — pipelines, models, and dashboards
             that turn raw data into something teams can actually trust and use.
         </p>
-        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#projects" class="btn-primary" data-i18n="hero.cta">View Projects</a>
     </div>
 </section>
 
 <section id="about" class="section">
     <div class="container">
-        <h2 class="section-title">About</h2>
+        <h2 class="section-title" data-i18n="about.title">About</h2>
         <div class="about-layout">
             <img src="photo.jpg" alt="Raul Ramos" class="about-photo">
-            <p class="about-text">
-                Analytics Engineer with 5+ years turning messy data into reliable, decision-ready
-                products. I work across the full stack — modeling data in SQL, building ETL pipelines
-                in Python, and delivering dashboards that executives actually use. Most of my career
-                has been at large Brazilian financial institutions (Santander &amp; Itaú), where I
-                owned KPI layers, metrics stores, and BI infrastructure at scale.<br><br>
-                This portfolio showcases some of the BI work I can share publicly. All projects use
-                fictional data — professional work stays confidential.
-            </p>
+            <div class="about-body">
+                <p class="about-text" data-i18n="about.p1">
+                    Analytics Engineer with 5+ years turning messy data into reliable, decision-ready
+                    products. I work across the full stack — modeling data in SQL, building ETL pipelines
+                    in Python, and delivering dashboards that executives actually use. Most of my career
+                    has been at large Brazilian financial institutions (Santander &amp; Itaú), where I
+                    owned KPI layers, metrics stores, and BI infrastructure at scale.
+                </p>
+                <p class="about-text about-text-2" data-i18n="about.p2">
+                    This portfolio showcases some of the BI work I can share publicly. All projects use
+                    fictional data — professional work stays confidential.
+                </p>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="projects" class="section section-alt">
     <div class="container">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title" data-i18n="projects.title">Projects</h2>
         <div class="projects-grid">
 
             <a href="projects/senior-bi-test.html" class="project-card">
-                <span class="card-tag">BI Assessment</span>
+                <span class="card-tag" data-i18n="card.sbi.tag">BI Assessment</span>
                 <h3>Senior BI Test</h3>
-                <p>Dashboard developed as part of a technical assessment for a Senior BI Analyst position, featuring advanced field parameters, custom tooltips, and interactive filters.</p>
-                <span class="card-link">View Project →</span>
+                <p data-i18n="card.sbi.desc">Dashboard developed as part of a technical assessment for a Senior BI Analyst position, featuring advanced field parameters, custom tooltips and interactive filters.</p>
+                <span class="card-link" data-i18n="card.viewmore">View Project →</span>
             </a>
 
             <a href="projects/hashtag-store.html" class="project-card">
-                <span class="card-tag">Retail · Sales</span>
+                <span class="card-tag" data-i18n="card.hashtag.tag">Retail · Sales</span>
                 <h3>Hashtag Store</h3>
-                <p>Sales and invoicing dashboard to analyze revenue and compare results against targets, with custom hover tooltips and a scrolling store-performance chart.</p>
-                <span class="card-link">View Project →</span>
+                <p data-i18n="card.hashtag.desc">Sales and invoicing dashboard to analyze revenue and compare results against targets, with custom hover tooltips and a scrolling store-performance chart.</p>
+                <span class="card-link" data-i18n="card.viewmore">View Project →</span>
             </a>
 
             <a href="projects/rauls-store.html" class="project-card">
-                <span class="card-tag">Retail · Returns</span>
+                <span class="card-tag" data-i18n="card.rauls.tag">Retail · Returns</span>
                 <h3>Raul's Store</h3>
-                <p>Sales and returns dashboard tracking revenue, profit, top customers, and return rates across store locations for a fictional retail chain.</p>
-                <span class="card-link">View Project →</span>
+                <p data-i18n="card.rauls.desc">Sales and returns dashboard tracking revenue, profit, top customers, and return rates across store locations for a fictional retail chain.</p>
+                <span class="card-link" data-i18n="card.viewmore">View Project →</span>
             </a>
 
             <a href="projects/projects-tracking.html" class="project-card">
-                <span class="card-tag">Project Management</span>
-                <h3>Projects Tracking</h3>
-                <p>Project monitoring dashboard providing insights on pipeline stages, monetary vs. actual values, and closure trends to improve portfolio management.</p>
-                <span class="card-link">View Project →</span>
+                <span class="card-tag" data-i18n="card.tracking.tag">Project Management</span>
+                <h3 data-i18n="card.tracking.title">Projects Tracking</h3>
+                <p data-i18n="card.tracking.desc">Project monitoring dashboard providing insights on pipeline stages, monetary vs. actual values, and closure trends to improve portfolio management.</p>
+                <span class="card-link" data-i18n="card.viewmore">View Project →</span>
             </a>
 
             <a href="projects/financial.html" class="project-card">
-                <span class="card-tag">Finance</span>
-                <h3>Financial</h3>
-                <p>Financial control dashboard monitoring revenues, payments, profit margin, and monthly profit across store locations with city-level filtering.</p>
-                <span class="card-link">View Project →</span>
+                <span class="card-tag" data-i18n="card.financial.tag">Finance</span>
+                <h3 data-i18n="card.financial.tag">Financial</h3>
+                <p data-i18n="card.financial.desc">Financial control dashboard monitoring revenues, payments, profit margin, and monthly profit across store locations with city-level filtering.</p>
+                <span class="card-link" data-i18n="card.viewmore">View Project →</span>
             </a>
 
             <a href="projects/hr.html" class="project-card">
-                <span class="card-tag">Human Resources</span>
+                <span class="card-tag" data-i18n="card.hr.tag">Human Resources</span>
                 <h3>HR</h3>
-                <p>HR dashboard providing workforce insights including headcount, turnover rate, gender distribution, hiring trends, and overtime hours by position.</p>
-                <span class="card-link">View Project →</span>
+                <p data-i18n="card.hr.desc">HR dashboard providing workforce insights including headcount, turnover rate, gender distribution, hiring trends, and overtime hours by position.</p>
+                <span class="card-link" data-i18n="card.viewmore">View Project →</span>
             </a>
 
             <a href="projects/sales.html" class="project-card">
-                <span class="card-tag">Retail · Sales</span>
+                <span class="card-tag" data-i18n="card.sales.tag">Retail · Sales</span>
                 <h3>Sales</h3>
-                <p>Sales monitoring dashboard tracking total revenue, top products and brands, and continental revenue distribution for a fictional store.</p>
-                <span class="card-link">View Project →</span>
+                <p data-i18n="card.sales.desc">Sales monitoring dashboard tracking total revenue, top products and brands, and continental revenue distribution for a fictional store.</p>
+                <span class="card-link" data-i18n="card.viewmore">View Project →</span>
             </a>
 
         </div>
@@ -113,9 +123,9 @@
 
 <section id="resume" class="section">
     <div class="container">
-        <h2 class="section-title">Resume</h2>
+        <h2 class="section-title" data-i18n="resume.title">Resume</h2>
 
-        <p class="resume-summary">
+        <p class="resume-summary" data-i18n="resume.summary">
             Analytics Engineer with 5+ years building data pipelines, self-serve analytics platforms, and BI infrastructure
             at two of Brazil's largest financial institutions (Santander &amp; Itaú). Specializes in translating ambiguous
             business problems into reliable, scalable data products — from ETL design to executive-facing dashboards.
@@ -123,7 +133,7 @@
             Available for remote roles (UTC-3).
         </p>
 
-        <h3 class="resume-subtitle">Experience</h3>
+        <h3 class="resume-subtitle" data-i18n="resume.experience">Experience</h3>
         <div class="timeline">
 
             <div class="timeline-item">
@@ -135,10 +145,10 @@
                     <span class="timeline-date">Jun 2025 – Present &nbsp;·&nbsp; São Paulo, BR</span>
                 </div>
                 <ul class="timeline-bullets">
-                    <li>Redesigned the Open Finance KPI layer in SQL/PySpark, reducing dashboard refresh time by ~60% and enabling real-time monitoring for 3 executive squads.</li>
-                    <li>Built a Python-based ETL framework (REST API → data warehouse) that replaced 4 manual processes, saving ~12 analyst hours/week.</li>
-                    <li>Architected a centralized metrics store that became the single source of truth for 8 cross-functional teams, eliminating reporting discrepancies.</li>
-                    <li>Mentored 3 junior analysts into independent contributors; introduced code review practices that cut production data bugs by 40%.</li>
+                    <li data-i18n="exp.s2.b1">Redesigned the Open Finance KPI layer in SQL/PySpark, reducing dashboard refresh time by ~60% and enabling real-time monitoring for 3 executive squads.</li>
+                    <li data-i18n="exp.s2.b2">Built a Python-based ETL framework (REST API → data warehouse) that replaced 4 manual processes, saving ~12 analyst hours/week.</li>
+                    <li data-i18n="exp.s2.b3">Architected a centralized metrics store that became the single source of truth for 8 cross-functional teams, eliminating reporting discrepancies.</li>
+                    <li data-i18n="exp.s2.b4">Mentored 3 junior analysts into independent contributors; introduced code review practices that cut production data bugs by 40%.</li>
                 </ul>
             </div>
 
@@ -151,9 +161,9 @@
                     <span class="timeline-date">Jul 2023 – Jun 2025 &nbsp;·&nbsp; São Paulo, BR</span>
                 </div>
                 <ul class="timeline-bullets">
-                    <li>Designed and owned 15+ KPIs tracking Open Finance adoption across Brazil, directly informing product prioritization for a portfolio serving millions of customers.</li>
-                    <li>Delivered a suite of Tableau/Power BI dashboards that consolidated data from 6 source systems, used weekly by C-level stakeholders.</li>
-                    <li>Automated a regulatory data-reconciliation process in Python, reducing a 3-day monthly effort to under 4 hours.</li>
+                    <li data-i18n="exp.s1.b1">Designed and owned 15+ KPIs tracking Open Finance adoption across Brazil, directly informing product prioritization for a portfolio serving millions of customers.</li>
+                    <li data-i18n="exp.s1.b2">Delivered a suite of Tableau/Power BI dashboards that consolidated data from 6 source systems, used weekly by C-level stakeholders.</li>
+                    <li data-i18n="exp.s1.b3">Automated a regulatory data-reconciliation process in Python, reducing a 3-day monthly effort to under 4 hours.</li>
                 </ul>
             </div>
 
@@ -166,19 +176,19 @@
                     <span class="timeline-date">Jan 2020 – Jul 2023 &nbsp;·&nbsp; São Paulo, BR</span>
                 </div>
                 <ul class="timeline-bullets">
-                    <li>Built optimization models (Python + SQL) to determine the ideal ATM equipment mix across ~4,500 branches in Brazil, improving equipment availability and reducing idle stock.</li>
-                    <li>Developed interactive sales dashboards adopted by 200+ branch managers nationwide, giving field teams daily visibility into product performance for the first time.</li>
-                    <li>Migrated 10+ legacy Excel-based reports to automated pipelines, cutting report generation from days to minutes and improving data accuracy.</li>
-                    <li>Analyzed ATM transaction trends across 5 product lines, surfacing insights that contributed to double-digit growth in digital product adoption.</li>
+                    <li data-i18n="exp.it.b1">Built optimization models (Python + SQL) to determine the ideal ATM equipment mix across ~4,500 branches in Brazil, improving equipment availability and reducing idle stock.</li>
+                    <li data-i18n="exp.it.b2">Developed interactive sales dashboards adopted by 200+ branch managers nationwide, giving field teams daily visibility into product performance for the first time.</li>
+                    <li data-i18n="exp.it.b3">Migrated 10+ legacy Excel-based reports to automated pipelines, cutting report generation from days to minutes and improving data accuracy.</li>
+                    <li data-i18n="exp.it.b4">Analyzed ATM transaction trends across 5 product lines, surfacing insights that contributed to double-digit growth in digital product adoption.</li>
                 </ul>
             </div>
 
         </div>
 
-        <h3 class="resume-subtitle">Technical Skills</h3>
+        <h3 class="resume-subtitle" data-i18n="resume.skills">Technical Skills</h3>
         <div class="skills-grid">
             <div class="skill-category">
-                <span class="skill-label">Languages & Query</span>
+                <span class="skill-label" data-i18n="skill.query">Languages & Query</span>
                 <div class="skill-tags">
                     <span class="skill-tag">Python</span>
                     <span class="skill-tag">SQL</span>
@@ -188,7 +198,7 @@
                 </div>
             </div>
             <div class="skill-category">
-                <span class="skill-label">Data Engineering</span>
+                <span class="skill-label" data-i18n="skill.eng">Data Engineering</span>
                 <div class="skill-tags">
                     <span class="skill-tag">ETL/ELT</span>
                     <span class="skill-tag">dbt</span>
@@ -198,7 +208,7 @@
                 </div>
             </div>
             <div class="skill-category">
-                <span class="skill-label">BI & Visualization</span>
+                <span class="skill-label" data-i18n="skill.bi">BI & Visualization</span>
                 <div class="skill-tags">
                     <span class="skill-tag">Power BI</span>
                     <span class="skill-tag">Dashboard Architecture</span>
@@ -206,7 +216,7 @@
                 </div>
             </div>
             <div class="skill-category">
-                <span class="skill-label">Infrastructure</span>
+                <span class="skill-label" data-i18n="skill.infra">Infrastructure</span>
                 <div class="skill-tags">
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">Azure</span>
@@ -214,20 +224,27 @@
                     <span class="skill-tag">Process Automation</span>
                 </div>
             </div>
+            <div class="skill-category">
+                <span class="skill-label" data-i18n="skill.lang">Spoken Languages</span>
+                <div class="skill-tags">
+                    <span class="skill-tag">Portuguese · Native</span>
+                    <span class="skill-tag">English · Advanced</span>
+                </div>
+            </div>
         </div>
 
-        <h3 class="resume-subtitle">Education</h3>
+        <h3 class="resume-subtitle" data-i18n="resume.education">Education</h3>
         <div class="education-list">
             <div class="education-item">
                 <div>
-                    <h4>MBA — Data Science & Artificial Intelligence</h4>
+                    <h4>MBA — Data Science &amp; Artificial Intelligence</h4>
                     <span class="timeline-company">FIAP</span>
                 </div>
                 <span class="timeline-date">Apr 2025 – Present</span>
             </div>
             <div class="education-item">
                 <div>
-                    <h4>B.S. in Computer Science</h4>
+                    <h4 data-i18n="edu.bs">B.S. in Computer Science</h4>
                     <span class="timeline-company">Universidade Paulista (UNIP)</span>
                 </div>
                 <span class="timeline-date">Jan 2018 – Jun 2022</span>
@@ -239,7 +256,7 @@
 
 <section id="contact" class="contact-section">
     <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title" data-i18n="contact.title">Contact</h2>
         <div class="contact-links">
 
             <a href="mailto:raul.tavares.r@gmail.com" class="contact-item">
@@ -258,9 +275,10 @@
             </a>
 
         </div>
-        <p class="footer-copy">© 2025 Raul Ramos. All projects use fictional data for educational purposes.</p>
+        <p class="footer-copy" data-i18n="footer.copy">© 2025 Raul Ramos. All projects use fictional data for educational purposes.</p>
     </div>
 </section>
 
+<script src="translations.js"></script>
 </body>
 </html>
