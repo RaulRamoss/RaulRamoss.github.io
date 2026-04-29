@@ -1,6 +1,9 @@
 const translations = {
   en: {
     'nav.about': 'About', 'nav.projects': 'Projects', 'nav.resume': 'Resume', 'nav.contact': 'Contact', 'nav.backlink': '← Back to Projects',
+    'section.features': 'Key Features', 'section.features.metrics': 'Key Features & Metrics', 'section.dashboard': 'Dashboard',
+    'section.howit': 'How It Works', 'section.tabs': 'Response Tabs', 'section.stack': 'Tech Stack',
+    'section.preview': 'Live Preview', 'section.inside': 'What\'s Inside',
     'hero.eyebrow': 'Analytics Engineer',
     'hero.description': 'Building the data layer behind the decisions — pipelines, models, and dashboards that turn raw data into something teams can actually trust and use.',
     'hero.cta': 'View Projects',
@@ -38,6 +41,9 @@ const translations = {
   },
   pt: {
     'nav.about': 'Sobre', 'nav.projects': 'Projetos', 'nav.resume': 'Currículo', 'nav.contact': 'Contato', 'nav.backlink': '← Voltar para Projetos',
+    'section.features': 'Funcionalidades', 'section.features.metrics': 'Funcionalidades & Métricas', 'section.dashboard': 'Dashboard',
+    'section.howit': 'Como Funciona', 'section.tabs': 'Abas de Resposta', 'section.stack': 'Stack Tecnológica',
+    'section.preview': 'Preview ao Vivo', 'section.inside': 'O que está incluído',
     'hero.eyebrow': 'Analytics Engineer',
     'hero.description': 'Construindo a camada de dados por trás das decisões — pipelines, modelos e dashboards que transformam dados brutos em algo em que os times possam confiar e usar de verdade.',
     'hero.cta': 'Ver Projetos',
