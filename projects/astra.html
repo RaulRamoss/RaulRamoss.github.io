@@ -102,7 +102,7 @@
             <span class="card-tag">Python</span>
             <span class="card-tag">MBA Thesis · FIAP</span>
         </div>
-        <h1 class="project-title">Astra — AI Data Analyst</h1>
+        <h1 class="project-title" data-i18n="card.astra.title">Astra — AI Data Analyst</h1>
         <p class="project-description" data-i18n="proj.astra.desc">
             An AI-powered data analyst that lets you query a Brazilian e-commerce database
             using plain Portuguese. Ask any business question and get back a natural-language
@@ -129,37 +129,37 @@
     <div class="container">
         <h2 class="section-title" data-i18n="section.howit">How It Works</h2>
         <div class="astra-arch">
-            <p style="color: var(--text-muted); font-size: 0.875rem;">Every question goes through a 4-step pipeline:</p>
+            <p style="color: var(--text-muted); font-size: 0.875rem;" data-i18n="astra.pipeline.desc">Every question goes through a 4-step pipeline:</p>
             <div class="arch-flow">
-                <span class="arch-step">Natural Language Question</span>
+                <span class="arch-step" data-i18n="astra.step1">Natural Language Question</span>
                 <span class="arch-arrow">→</span>
-                <span class="arch-step">Claude Haiku classifies intent</span>
+                <span class="arch-step" data-i18n="astra.step2">Claude Haiku classifies intent</span>
                 <span class="arch-arrow">→</span>
-                <span class="arch-step">NL → SQL + chart config</span>
+                <span class="arch-step" data-i18n="astra.step3">NL → SQL + chart config</span>
                 <span class="arch-arrow">→</span>
-                <span class="arch-step">DuckDB executes query</span>
+                <span class="arch-step" data-i18n="astra.step4">DuckDB executes query</span>
                 <span class="arch-arrow">→</span>
-                <span class="arch-step">Claude generates insight</span>
+                <span class="arch-step" data-i18n="astra.step5">Claude generates insight</span>
             </div>
         </div>
 
         <h2 class="section-title" style="margin-top: 2.5rem;" data-i18n="section.tabs">Response Tabs</h2>
         <div class="output-grid">
             <div class="output-item">
-                <h4>Insight</h4>
-                <p>Natural language analysis of the results — trends, peaks, and anomalies highlighted.</p>
+                <h4 data-i18n="astra.tab.insight.title">Insight</h4>
+                <p data-i18n="astra.tab.insight.desc">Natural language analysis of the results — trends, peaks, and anomalies highlighted.</p>
             </div>
             <div class="output-item">
-                <h4>Chart</h4>
-                <p>Auto-selected chart type (bar, line, pie, horizontal bar) based on the data shape.</p>
+                <h4 data-i18n="astra.tab.chart.title">Chart</h4>
+                <p data-i18n="astra.tab.chart.desc">Auto-selected chart type (bar, line, pie, horizontal bar) based on the data shape.</p>
             </div>
             <div class="output-item">
-                <h4>SQL</h4>
-                <p>The full query that ran, formatted and readable — full transparency on the data source.</p>
+                <h4 data-i18n="astra.tab.sql.title">SQL</h4>
+                <p data-i18n="astra.tab.sql.desc">The full query that ran, formatted and readable — full transparency on the data source.</p>
             </div>
             <div class="output-item">
-                <h4>Raw Data</h4>
-                <p>The underlying dataframe, explorable and filterable in the UI.</p>
+                <h4 data-i18n="astra.tab.raw.title">Raw Data</h4>
+                <p data-i18n="astra.tab.raw.desc">The underlying dataframe, explorable and filterable in the UI.</p>
             </div>
         </div>
     </div>
